@@ -1,36 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Menu Card</title>
+
+<style>
+body{
+    background:#2f2f2f;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.main-table{
+    width:1000px;
+    margin:auto;
+    border:4px solid gray;
+    border-spacing:5px;
+    background:black;
+    color:orange;
+}
+
+.header{
+    background:yellow;
+    color:black;
+    font-size:24px;
+    text-decoration:underline;
+}
+
+.inner-table{
+    width:100%;
+    border:2px solid gray;
+    background:black;
+    color:orange;
+}
+
+.menu-table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.menu-table th,
+.menu-table td{
+    border:1px solid gray;
+    padding:4px;
+}
+
+.menu-table th{
+    color:white;
+}
+</style>
 </head>
 
-<body style="background-color:#2f2f2f; font-family:'Times New Roman', Times, serif;">
+<body>
 
-<table border="4" align="center" width="1000" cellpadding="5" cellspacing="5" 
-style="background-color:black; color:orange; border-color:gray;">
+<table class="main-table">
 
 <tr>
-<th colspan="3" style="background-color:yellow; color:black; font-size:24px;">
-<u>MENUCARD</u>
-</th>
+<th colspan="3" class="header">MENUCARD</th>
 </tr>
 
 <!-- FIRST ROW -->
 <tr>
 
-<td valign="top">
-<!-- PURE VEG -->
-<table border="2" width="100%" style="background-color:black; color:orange;">
-<tr><th style="color:orange;">PURE VEG</th></tr>
-<tr>
-<td align="center">
-<img src="pureVeg.jpg" width="200" height="150">
-</td>
-</tr>
-<tr>
 <td>
-<table border="1" width="100%">
-<tr style="color:white;"><th>Menu</th><th>Price</th></tr>
+<table class="inner-table">
+<tr><th>PURE VEG</th></tr>
+<tr><td align="center"><img src="pureVeg.jpg" width="200" height="150" alt="VegMenu"></td></tr>
+<tr><td>
+<table class="menu-table">
+<tr><th>Menu</th><th>Price</th></tr>
 <tr><td>Matar Paneer</td><td>200</td></tr>
 <tr><td>Shahi Paneer</td><td>220</td></tr>
 <tr><td>Kaju Masala</td><td>220</td></tr>
@@ -39,24 +77,17 @@ style="background-color:black; color:orange; border-color:gray;">
 <tr><td>Dal Tadka</td><td>150</td></tr>
 <tr><td>Bhindi Fry</td><td>170</td></tr>
 </table>
-</td>
-</tr>
+</td></tr>
 </table>
 </td>
 
-<td valign="top">
-<!-- BREADS -->
-<table border="2" width="100%">
-<tr><th style="color:orange;">BREAD'S</th></tr>
-<tr>
-<td align="center">
-<img src="Breads.jpg" width="250" height="150">
-</td>
-</tr>
-<tr>
 <td>
-<table border="1" width="100%">
-<tr style="color:white;"><th>Menu</th><th>Price</th></tr>
+<table class="inner-table">
+<tr><th>BREADS</th></tr>
+<tr><td align="center"><img src="Breads.jpg" width="250" height="150" alt="VegMenu"></td></tr>
+<tr><td>
+<table class="menu-table">
+<tr><th>Menu</th><th>Price</th></tr>
 <tr><td>Tandoori Roti</td><td>20</td></tr>
 <tr><td>Lachha Paratha</td><td>30</td></tr>
 <tr><td>Butter Naan</td><td>25</td></tr>
@@ -65,34 +96,26 @@ style="background-color:black; color:orange; border-color:gray;">
 <tr><td>Plain Naan</td><td>20</td></tr>
 <tr><td>Garlic Naan</td><td>30</td></tr>
 </table>
-</td>
-</tr>
+</td></tr>
 </table>
 </td>
 
-<td valign="top">
-<!-- NON VEG -->
-<table border="2" width="100%">
-<tr><th style="color:orange;">NON-VEG</th></tr>
-<tr>
-<td align="center">
-<img src="nonVeg.jpg" width="250" height="150">
-</td>
-</tr>
-<tr>
 <td>
-<table border="1" width="100%">
-<tr style="color:white;"><th>Menu</th><th>Price</th></tr>
+<table class="inner-table">
+<tr><th>NON-VEG</th></tr>
+<tr><td align="center"><img src="nonVeg.jpg" width="250" height="150" alt="VegMenu"></td></tr>
+<tr><td>
+<table class="menu-table">
+<tr><th>Menu</th><th>Price</th></tr>
 <tr><td>Butter Chicken</td><td>350</td></tr>
 <tr><td>Kadai Chicken</td><td>250</td></tr>
 <tr><td>Chicken Curry</td><td>300</td></tr>
 <tr><td>Fish Curry</td><td>400</td></tr>
 <tr><td>Egg Curry</td><td>150</td></tr>
-<tr><td>Chicken Handi sp</td><td>270</td></tr>
+<tr><td>Chicken Handi</td><td>270</td></tr>
 <tr><td>Prawns Fry</td><td>450</td></tr>
 </table>
-</td>
-</tr>
+</td></tr>
 </table>
 </td>
 
@@ -101,19 +124,13 @@ style="background-color:black; color:orange; border-color:gray;">
 <!-- SECOND ROW -->
 <tr>
 
-<td valign="top">
-<!-- RICE -->
-<table border="2" width="100%">
-<tr><th style="color:orange;">RICE</th></tr>
-<tr>
-<td align="center">
-<img src="rice.jpg" width="200" height="150">
-</td>
-</tr>
-<tr>
 <td>
-<table border="1" width="100%">
-<tr style="color:white;"><th>Menu</th><th>Price</th></tr>
+<table class="inner-table">
+<tr><th>RICE</th></tr>
+<tr><td align="center"><img src="rice.jpg" width="200" height="150" alt="VegMenu"></td></tr>
+<tr><td>
+<table class="menu-table">
+<tr><th>Menu</th><th>Price</th></tr>
 <tr><td>Jeera Rice</td><td>130</td></tr>
 <tr><td>Veg Pulao</td><td>130</td></tr>
 <tr><td>Plain Rice</td><td>90</td></tr>
@@ -123,51 +140,37 @@ style="background-color:black; color:orange; border-color:gray;">
 <tr><td>Matar Pulao</td><td>140</td></tr>
 <tr><td>Chicken Pulao</td><td>210</td></tr>
 </table>
-</td>
-</tr>
+</td></tr>
 </table>
 </td>
 
-<td valign="top">
-<!-- CHINESE -->
-<table border="2" width="100%">
-<tr><th style="color:orange;">CHINESE</th></tr>
-<tr>
-<td align="center">
-<img src="chinese.jpg" width="250" height="150">
-</td>
-</tr>
-<tr>
 <td>
-<table border="1" width="100%">
-<tr style="color:white;"><th>Menu</th><th>Full</th><th>Half</th></tr>
+<table class="inner-table">
+<tr><th>CHINESE</th></tr>
+<tr><td align="center"><img src="chinese.jpg" width="250" height="150" alt="VegMenu"></td></tr>
+<tr><td>
+<table class="menu-table">
+<tr><th>Menu</th><th>Full</th><th>Half</th></tr>
 <tr><td>Noodles</td><td>140</td><td>70</td></tr>
 <tr><td>Manchurian</td><td>130</td><td>65</td></tr>
 <tr><td>Fried Rice</td><td>100</td><td>50</td></tr>
-<tr><td>Manchow Soup</td><td>90</td><td> -</td></tr>
+<tr><td>Manchow Soup</td><td>90</td><td>-</td></tr>
 <tr><td>Schezwan Chilli</td><td>160</td><td>80</td></tr>
 <tr><td>Schezwan Noodles</td><td>160</td><td>80</td></tr>
 <tr><td>Schezwan Fried Rice</td><td>160</td><td>80</td></tr>
 <tr><td>Chicken Manchow Soup</td><td>170</td><td>90</td></tr>
 </table>
-</td>
-</tr>
+</td></tr>
 </table>
 </td>
 
-<td valign="top">
-<!-- SOUTH INDIAN -->
-<table border="2" width="100%">
-<tr><th style="color:orange;">SOUTH-INDIAN</th></tr>
-<tr>
-<td align="center">
-<img src="southIndian.jpg" width="250" height="150">
-</td>
-</tr>
-<tr>
 <td>
-<table border="1" width="100%">
-<tr style="color:white;"><th>Menu</th><th>Price</th></tr>
+<table class="inner-table">
+<tr><th>SOUTH-INDIAN</th></tr>
+<tr><td align="center"><img src="southIndian.jpg" width="250" height="150" alt="VegMenu"></td></tr>
+<tr><td>
+<table class="menu-table">
+<tr><th>Menu</th><th>Price</th></tr>
 <tr><td>Plain Dosa</td><td>35</td></tr>
 <tr><td>Masala Dosa</td><td>45</td></tr>
 <tr><td>Vada Sambar</td><td>40</td></tr>
@@ -177,8 +180,7 @@ style="background-color:black; color:orange; border-color:gray;">
 <tr><td>Loni Sponge Dosa</td><td>60</td></tr>
 <tr><td>Rasam Rice</td><td>50</td></tr>
 </table>
-</td>
-</tr>
+</td></tr>
 </table>
 </td>
 
@@ -188,18 +190,6 @@ style="background-color:black; color:orange; border-color:gray;">
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
